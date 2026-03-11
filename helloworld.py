@@ -1,0 +1,5 @@
+print(1)
+print("hello world")
+print("swathi","swrh","dfsf", ":", + 5)
+print(type(1))
+print(2**3**(2%10))
