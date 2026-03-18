@@ -1,16 +1,16 @@
 '''Print numbers from 1 to 50 using for loop'''
 
-for i in range(51):
+for i in range(1,51):
     print(i)
 
 '''Print even numbers from 1 to 100'''
-for i in range(101):
+for i in range(1,101):
     if i%2==0:
         print(i)
 
 '''Print odd numbers from 1 to 100'''
 
-for i in range(100):
+for i in range(1,101):
     if i%2==1:
         print(i)
 '''Print multiplication table of 7'''
