@@ -15,7 +15,7 @@ for i in range(1,101):
         print(i)
 '''Print multiplication table of 7'''
 
-for i in range(11):
+for i in range(1,11):
     print("7", "x", i ,"=",7*i)
 
 '''Find sum of numbers from 1 to 100'''
