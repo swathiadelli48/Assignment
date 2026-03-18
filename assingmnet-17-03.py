@@ -4,7 +4,7 @@ for i in range(51):
     print(i)
 
 '''Print even numbers from 1 to 100'''
-for i in range(100):
+for i in range(101):
     if i%2==0:
         print(i)
 
