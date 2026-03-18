@@ -98,12 +98,9 @@ print(count)
 '''Keep asking input until user enters "stop"'''
 while True:
     str = input("Enter something to 'stop': ")
-    
     if str == "stop":
         break
-    
     print("You entered:", str)
-
 
 '''Print pattern:
 *
@@ -126,14 +123,12 @@ for i in range(1,5):
         print(j, end=" ")
     print()     
 
-
 '''Print multiplication table (1 to 5) using nested loop'''
 for i in range(1, 6):        
     print("Table of", i)
     
     for j in range(1, 11):   
         print(i, "x", j, "=", i * j)
-    
     print() 
 
 '''Print:
@@ -172,7 +167,6 @@ for i in str:
         count += 1
 print(count)
 
-
 '''Count consonants in a string'''
 str = input("Enter a string: ")
 consonants = 'bcdfghjklmnpqrstvwxyz'
@@ -189,7 +183,6 @@ for ch in s:
     rev = ch + rev
 print("Reversed string:", rev)
 
-
 '''Check if string is palindrome''' 
 s = input("Enter a string: ")
 rev = ""
@@ -205,9 +198,9 @@ str = input("Ehter a string: ")
 print(str[0:5])
 
 '''Print last 3 characters'''
-
 str = input("Ehter a string: ")
 print(str[-3:])
+
 '''Print string in reverse using slicing'''
 str = "python"
 print(str[::-1])
@@ -267,22 +260,18 @@ n = int(input("Enter a number: "))
 lst.remove(n)
 print(lst)
 
-
 '''Reverse list without using .reverse()'''
 lst = [10, 20, 30, 40]
 rev = lst[::-1]
-
 print("Reversed list:", rev)
 
 '''Sort list without using .sort()'''
 lst = [5, 2, 9, 1, 7]
-
 for i in range(len(lst)):
     min_index = i
     for j in range(i + 1, len(lst)):
         if lst[j] < lst[min_index]:
             min_index = j
-    
     lst[i], lst[min_index] = lst[min_index], lst[i]
 
 print("Sorted list:", lst)
