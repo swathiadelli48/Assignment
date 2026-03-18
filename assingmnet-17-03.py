@@ -1,6 +1,6 @@
 '''Print numbers from 1 to 50 using for loop'''
 
-for i in range(100):
+for i in range(51):
     print(i)
 
 '''Print even numbers from 1 to 100'''
