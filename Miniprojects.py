@@ -183,11 +183,29 @@ Store candidates and votes
 Add vote
 Display winner'''
 
-votes={"A":0,"B":0}
-for _ in range(3):
-    v=input("Vote:")
-    if v in votes: votes[v]+=1
-print("Winner:",max(votes,key=votes.get))
+votes = {
+    "Alice": 0,
+    "Bob": 0,
+    "Charlie": 0
+}
+
+for candidate in votes:
+    # print("-", candidate)
+    choice = input("Enter candidate name to vote: ")
+
+    if choice in votes:
+        votes[choice] += 1
+        print("Vote casted successfully!\n")
+    else:
+        print("Invalid candidate\n")
+
+for candidate, count in votes.items():
+    print(f"{candidate}: {count} votes")
+
+winner = max(votes, key=votes.get)
+print(f"\n Winner: {winner} with {votes[winner]} votes")
+
+
 
 '''Mini Project 9: Course Enrollment System
 Concepts: List + Dictionary
