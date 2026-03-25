@@ -101,10 +101,13 @@ users = {"admin": "9040", "john": "john@123"}
 username = input("Username: ")
 password = input("Password: ")
  
-if users.get(username) == password:
-    print("Login Success")
+if username in users:
+    if users[username] == password:
+        print("Login successful! Welcome,", username)
+    else:
+        print("Incorrect password")
 else:
-    print("Login Failed")           
+    print(" Username not found")          
 
 
 '''Mini Project 5: Unique Visitor Counter
