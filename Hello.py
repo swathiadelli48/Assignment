@@ -1,26 +1,18 @@
-# print("Hello")
-# lst = []
-# while True:
-#     input1 = input("Enter the input:- ")
+# str = input("ENTER STRING: ")
+# print(str[1:-1])
 
-#     if input1=="s":
-#         break
-#     lst.append(input1)
-# print(lst)
+# for i in range(51):
+#     print(i)
+
+# for i in range(11):
+#     print("7", "x", i ,"=",7*i)
 
 
-str = "1,2,3,4,5"
+num = int(input("enter the number: "))
 
-str1 =" "
 
-for i in str:
+def sum(num):
+    res = num * (num+1)/2
+    return res
 
-    if i == ",":
-        continue
-    str1 += i
-print(str1)    
-
-print("swathi areu doing something that is not required any more")
-str3 = "swathi, naresh"
-res = str3.removeprefix(1)
-print(res, "result")
+print(sum(num))
