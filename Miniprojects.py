@@ -12,7 +12,7 @@ employees=[]
 def adding_employee():
     name = input("Ente name: ")
     age = int(input("Enter the age"))
-    role = int("Enter the role ")
+    role = input("Enter the role ")
     salary = float(input("Enter the salary"))
     employees.append({"name":name,"age":age,"role":role,"salary":salary})
 
