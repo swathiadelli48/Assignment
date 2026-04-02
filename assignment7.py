@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from functools import reduce
 
-'''-----ABSTRACT CLASS------'''
+'''TASK 2: -----ABSTRACT CLASS------'''
 
 class AbstractUser(ABC):
     @abstractmethod
